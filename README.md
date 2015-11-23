@@ -5,4 +5,5 @@ This repo contains all of my personal code which consists of original programs a
 C++
 =====
 C++ Programming in Easy Steps by Mike McGrath, ISBN: 978-1840784329
+Jumping into C++ by Alex Allain, ISBN: 978-0988927803
 
