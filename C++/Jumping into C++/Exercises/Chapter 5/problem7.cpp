@@ -11,16 +11,19 @@ using namespace std;
 
 int main()
 {
+	//string variables to hold poll question and answers entered by user
 	string question = "";
 	string choice1 = "";
 	string choice2 = "";
 	string choice3 = "";
 
+	//integer variables to store user votes and tallies
 	int userInput;
 	int optionOneCount = 0;
 	int optionTwoCount = 0;
 	int optionThreeCount = 0;
 
+	//get the poll question and 3 possible answers from the user, store in variables from earlier
 	cout<< "Please enter a poll question: " <<endl;
 	getline( cin, question, '\n' );
 
@@ -35,6 +38,7 @@ int main()
 
 	do
 	{
+		//print out poll to user and take and store their vote
 		cout<< ".....USER POLL....." <<endl <<endl;
 		cout<< question <<endl <<endl;
 		cout<< "1. " << choice1 <<endl;
@@ -43,6 +47,7 @@ int main()
 		cout<<"Please enter a choice from 1, 2 or 3...(Enter 0 to quit)" <<endl;
 		cin>> userInput;
 
+		//test user vote input against each option and increment counter for that option
 		if(userInput == 1)
 		{
 			cout<< "Option 1 selected. Thank you for voting." <<endl;
@@ -60,6 +65,7 @@ int main()
 		}
 		else
 		{
+			//we do not want to display the invalid option text if the user wants to quit the program
 			if(userInput == 0)
 			{
 				continue;
@@ -68,8 +74,10 @@ int main()
 		}
 	}while(userInput != 0);
 
-	cout<< endl<< "Tally...." <<endl;
+	//display results after user exits vote mode
+	cout<< endl<< "Calculating Tally...." <<endl;
 	cout<< endl<< "People who chose option 1: " <<endl;
+	//use for loops to display a bar graph using * character
 	for(int i = 0; i <= optionOneCount; i++)
 	{
 		cout<< "*";
@@ -84,8 +92,5 @@ int main()
 	{
 		cout<< "*";
 	}
-	//cout<< optionOneCount << endl;
-	//cout<< optionTwoCount << endl;
-	//cout<< optionThreeCount << endl;
 	return 0;
 }
