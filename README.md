@@ -1,12 +1,10 @@
 # MyCode
 This repo contains my code solutions for exercises from books & online tutorials etc that I have used to learn. Sources are as follows;
 
+<strong>Java</strong>
 
-<strong>C++</strong>
+Java Concepts (4th Edition) by Cay Horstmann, ISBN: 0-471-69704-4
 
-C++ Programming in Easy Steps by Mike McGrath, ISBN: 978-1840784329
-
-Jumping into C++ by Alex Allain, ISBN: 978-0988927803
 
 <strong>HTML / CSS</strong>
 
