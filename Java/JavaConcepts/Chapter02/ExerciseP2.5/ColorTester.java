@@ -12,14 +12,13 @@ public class ColorTester
 	public static void main(String[] args)
 	{
 		//create a new color object with the specified RGB values
-		Color c1 = Color.RED;
+		Color c1 = new Color(50, 100, 150);
 
-		//apply darker method to c1 twice and save output to new color c3
-		Color c2 = c1.darker();
-		Color c3 = c2.darker();
+		//apply brighter method to c1 and save output to new color c2
+		Color c2 = c1.brighter();
 
 		//print out original color c1
-		System.out.println("The original RED color was: ");
+		System.out.println("The original color was: ");
 		System.out.print("Red:");
 		System.out.print(c1.getRed());
 		System.out.print(" Green:");
@@ -27,14 +26,14 @@ public class ColorTester
 		System.out.print(" Blue:");
 		System.out.println(c1.getBlue());
 
-		//print out new color c3
-		System.out.println("The new RED color is: ");
+		//print out new color c2
+		System.out.println("The new color is: ");
 		System.out.print("Red:");
-		System.out.print(c3.getRed());
+		System.out.print(c2.getRed());
 		System.out.print(" Green:");
-		System.out.print(c3.getGreen());
+		System.out.print(c2.getGreen());
 		System.out.print(" Blue:");
-		System.out.println(c3.getBlue());
+		System.out.println(c2.getBlue());
 
 	}
 }

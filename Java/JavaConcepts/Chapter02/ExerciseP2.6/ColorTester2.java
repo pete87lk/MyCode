@@ -11,14 +11,14 @@ public class ColorTester2
 {
 	public static void main(String[] args)
 	{
-		//create a new color object with the specified RGB values
-		Color c1 = new Color(50, 100, 150);
+		//create a new color object with the predefined RED value for comparison
+		Color c1 = Color.RED;
 
-		//apply brighter method to c1 and save output to new color c2
-		Color c2 = c1;
+		//create a new color object with the predefined RED value and then apply darker method twice
+		Color c2 = Color.RED.darker().darker();		
 
 		//print out original color c1
-		System.out.println("The original color was: ");
+		System.out.println("The original RED color was: ");
 		System.out.print("Red:");
 		System.out.print(c1.getRed());
 		System.out.print(" Green:");
@@ -27,9 +27,9 @@ public class ColorTester2
 		System.out.println(c1.getBlue());
 
 		//print out new color c2
-		System.out.println("The new color is: ");
+		System.out.println("The new RED color is: ");
 		System.out.print("Red:");
-		System.out.print(c2.RED.darken());
+		System.out.print(c2.getRed());
 		System.out.print(" Green:");
 		System.out.print(c2.getGreen());
 		System.out.print(" Blue:");
